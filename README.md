@@ -12,3 +12,6 @@
 
 
 post body
+
+
+## live url : https://qrcode-generator-api.herokuapp.com/
