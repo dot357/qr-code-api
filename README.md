@@ -7,8 +7,7 @@
     "innerData":"12356",
     "light" : "#fff",
     "dark" : "#000",
-    "width" : "2250",
-    "height" : "250"
+    "width" : "250"
 }
 
 
