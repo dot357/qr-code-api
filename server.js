@@ -7,11 +7,12 @@ var QRCode = require("qrcode");
 // const fetch = require('node-fetch');
 // Initialize express and define a port
 const app = express();
-// const PORT = 3000;
+// const PORT = 4001;
 // Herkou port 
 const PORT = process.env.PORT;
 
 // Tell express to use body-parser's JSON parsing
+app.use(cors())
 app.use(bodyParser.json());
 
 // Start express on the defined port
@@ -21,7 +22,7 @@ app.listen(PORT || 5000, () =>
 );
 
 app.post("/qr", cors(), async (req, res) => {
-//   console.log(req.body);
+  console.log(req.body);
   let innerData = req.body.innerData ? req.body.innerData : null;
   let light = req.body.light ? req.body.light : "#fff";
   let dark = req.body.dark ? req.body.dark : "#000";
